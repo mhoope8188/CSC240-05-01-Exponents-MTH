@@ -29,15 +29,12 @@ namespace Exponents
         {
             // STORAGE
 
-            int = 'n';
-            int Square;
-            int Cube;
-            Square = 0;
-            Cube = 0;
+            int = num;
+            
 
             // INPUT
 
-
+            num = Convert.ToInt32(UxInputTextBox.Text);
 
 
             // PROCESS
@@ -45,8 +42,12 @@ namespace Exponents
              * do this with a method call that allows you to pass the number
              * and then receive the answer */
 
+            UxOutputLabel.Text = "Square is " + Square(num).ToString();
+            UxOutputLabel.Visible = true;
+
             /* calculate the cube of the number and add it to the output - 
              * do this by creating a methd as in the squaring example above */
+
 
             // OUTPUT
             // set the output to visible
@@ -62,13 +63,14 @@ namespace Exponents
 
         public int Square(int num)
         {
-           Square = 'n' * 'n';
+           
+            return num * num;
             // we will create this code in class
         }
 
         public int Cube(int num)
         {
-            Cube = 'n' * 'n' * 'n';
+            return num * num * num;
             // we will create this code in class
         }
 
