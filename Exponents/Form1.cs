@@ -6,10 +6,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using static System.Console;
 
 /**************************************
- * Name:
- * Date:
+ * Name:Matthew Hooper
+ * Date:21 April 2022
  * Description: A program using user-created method
  *              for the math function Square and Cube
  * Assistance:
@@ -24,11 +25,20 @@ namespace Exponents
             InitializeComponent();
         }
 
-        private void xGoButton_Click(object sender, EventArgs e)
+        private void UxGoButton_Click(object sender, EventArgs e)
         {
             // STORAGE
 
+            int = 'n';
+            int Square;
+            int Cube;
+            Square = 0;
+            Cube = 0;
+
             // INPUT
+
+
+
 
             // PROCESS
             /* calculate the square of the number and add it to the output - 
@@ -42,23 +52,36 @@ namespace Exponents
             // set the output to visible
 
             // turn the Go button off
+
+
+            UxOutputLabel.Visible = true;
+            UxGoButton.Enabled = false;
+
+
         }
 
         public int Square(int num)
         {
+           Square = 'n' * 'n';
             // we will create this code in class
         }
 
         public int Cube(int num)
         {
+            Cube = 'n' * 'n' * 'n';
             // we will create this code in class
         }
 
-        private void xResetButton_Click(object sender, EventArgs e)
+        private void UxResetButton_Click(object sender, EventArgs e)
         {
             // the input and output text should be emptied
             // turn the output to invisible
             // turn the Go button back on
+
+            UxInputTextBox.Enabled = false;
+            UxOutputLabel.Enabled = false;
+            UxOutputLabel.Visible = false;
+            UxGoButton.Enabled = true;
         }
 
     }
